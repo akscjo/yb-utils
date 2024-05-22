@@ -6,7 +6,8 @@ curl --location --request POST 'https://<YBA-SERVER-IP>/api/v1/api_login' \
 --data-raw '{
 "email":"XXXX@yugabyte.com"
 ,"password":"YYYY"
-}'
+}' \
+-k
 ```
 
 ## How to get Auth Token 

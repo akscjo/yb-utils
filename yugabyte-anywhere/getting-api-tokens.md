@@ -1,10 +1,11 @@
 ## How to get Auth Token 
 
+```
 curl --location --request POST 'https://<YBA-SERVER-IP>/api/v1/login' \
 --header 'Content-Type: application/json' \
 --data-raw '{
 "email":"xxx@yugabyte.com"
-,"password":"Demo1pass@"
+,"password":"yyyy"
 }' \
 -k
 ```

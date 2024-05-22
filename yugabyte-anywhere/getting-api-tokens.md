@@ -1,3 +1,14 @@
+## How to get API Token if it already exists
+
+```
+curl --location --request POST 'https://<YBA-SERVER-IP>/api/v1/api_login' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+"email":"XXXX@yugabyte.com"
+,"password":"YYYY"
+}'
+```
+
 ## How to get Auth Token 
 
 ```

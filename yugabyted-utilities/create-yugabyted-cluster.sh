@@ -50,7 +50,7 @@ NODE2_CLOUD="aws.us-east-1.us-east-1a"
 NODE3_CLOUD="aws.us-east-1.us-east-1b"
 
 SSH_USER="ec2-user"
-SSH_KEY_PATH="/home/ec2-user/keys/kp-CANNON-aws.pem"
+SSH_KEY_PATH="/home/ec2-user/keys/KEYNAME.pem"
 
 YB_VERSION="2024.1.2.0"
 YB_BUILD="b77"

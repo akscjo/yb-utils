@@ -14,9 +14,9 @@ NODE1_IP="127.0.0.1"
 NODE2_IP="127.0.0.2"
 NODE3_IP="127.0.0.3"
 
-NODE1_CLOUD="cloud.region1.node1"
-NODE2_CLOUD="cloud.region1.node2"
-NODE3_CLOUD="cloud.region1.node3"
+NODE1_CLOUD="cloud.region1.zone1"
+NODE2_CLOUD="cloud.region1.zone2"
+NODE3_CLOUD="cloud.region1.zone3"
 
 YB_VERSION="2024.1.2.0"
 YB_BUILD="b77"

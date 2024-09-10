@@ -11,16 +11,22 @@ YB_INSTALL_DIR="${YB_SOFTWARE_DIR}/yugabyte-${YB_VERSION}"
 
 
 # Stop 2nd node
-printf "\Stopping node 2...\n"
+printf "\nStopping node 2...\n"
 $YB_INSTALL_DIR/bin/yugabyted stop  --base_dir=$YB_SOFTWARE_DIR/node2
 
 # Stop 3rd node
-printf "\Stopping node 2...\n"
+printf "\nStopping node 3...\n"
 $YB_INSTALL_DIR/bin/yugabyted stop  --base_dir=$YB_SOFTWARE_DIR/node3
 
 # Stop primary node
-printf "\Stopping primary node...\n"
+printf "\nStopping primary node...\n"
 $YB_INSTALL_DIR/bin/yugabyted stop  --base_dir=$YB_SOFTWARE_DIR/node1 
+
+# Destroy extra nodes (if you scaled out the cluster)
+printf "\nStopping extra nodes created due to scale out...\n"
+$YB_INSTALL_DIR/bin/yugabyted stop  --base_dir=$YB_SOFTWARE_DIR/node4
+$YB_INSTALL_DIR/bin/yugabyted stop  --base_dir=$YB_SOFTWARE_DIR/node5
+$YB_INSTALL_DIR/bin/yugabyted stop  --base_dir=$YB_SOFTWARE_DIR/node6
 
 
 printf "\nYugabyteDB Universe...All Nodes Stopped\n"

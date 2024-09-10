@@ -14,12 +14,12 @@ printf "\Starting primary node...\n"
 $YB_INSTALL_DIR/bin/yugabyted start  --base_dir=$YB_SOFTWARE_DIR/node1 
 sleep 5
 
-# Stop 2nd node
+# Start 2nd node
 printf "\nStarting node 2...\n"
 $YB_INSTALL_DIR/bin/yugabyted start  --base_dir=$YB_SOFTWARE_DIR/node2
 sleep 5
 
-# Stop 3rd node
+# Start 3rd node
 printf "\nStarting node 3...\n"
 $YB_INSTALL_DIR/bin/yugabyted start  --base_dir=$YB_SOFTWARE_DIR/node3
 
